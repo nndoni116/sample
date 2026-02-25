@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "cafe-demo",
+  "name": "sample",  // ← Cloudflareダッシュボードの名前に合わせる
   "compatibility_date": "2024-04-03",
   "main": "dist/_worker.js",
   "assets": {
