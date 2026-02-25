@@ -1,0 +1,81 @@
+---
+const categories = [
+  {
+    name: 'Coffee',
+    icon: '☕',
+    items: [
+      { name: 'エスプレッソ', desc: 'シングルオリジン豆使用', price: '¥500' },
+      { name: 'カフェラテ', desc: '濃厚なエスプレッソとスチームミルク', price: '¥650' },
+      { name: 'カプチーノ', desc: 'きめ細かいフォームミルク', price: '¥680' },
+      { name: 'ドリップコーヒー', desc: '季節のブレンド・本日の一杯', price: '¥550' },
+      { name: 'アイスコーヒー', desc: '水出し12時間抽出', price: '¥600' },
+    ],
+  },
+  {
+    name: 'Tea & Others',
+    icon: '🍃',
+    items: [
+      { name: 'アールグレイ', desc: 'ベルガモット香るリーフティー', price: '¥580' },
+      { name: '抹茶ラテ', desc: '宇治抹茶使用、豆乳変更可', price: '¥680' },
+      { name: 'チャイ', desc: 'スパイス香るインドチャイ', price: '¥650' },
+      { name: 'レモネード', desc: '国産レモン生搾り', price: '¥620' },
+    ],
+  },
+  {
+    name: 'Food',
+    icon: '🥐',
+    items: [
+      { name: 'クロワッサン', desc: '毎朝焼きたて・バター香る', price: '¥380' },
+      { name: 'チーズトースト', desc: '厚切りパンにゴーダチーズ', price: '¥550' },
+      { name: '本日のスコーン', desc: '季節のジャム添え', price: '¥450' },
+      { name: 'プリン・ア・ラ・モード', desc: '昔ながらの固めプリン', price: '¥580' },
+    ],
+  },
+];
+---
+<section id="menu" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <!-- Section header -->
+    <div class="text-center mb-16 reveal">
+      <p class="font-sans text-xs tracking-[0.3em] uppercase text-latte mb-3">Our Menu</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-espresso">メニュー</h2>
+      <div class="mt-4 flex items-center justify-center gap-3">
+        <div class="h-px w-12 bg-latte/50"></div>
+        <span class="text-latte text-sm">✦</span>
+        <div class="h-px w-12 bg-latte/50"></div>
+      </div>
+      <p class="mt-4 font-serif text-mocha/70 italic text-sm">※価格はすべて税込表示です</p>
+    </div>
+
+    <!-- Menu categories -->
+    <div class="space-y-12">
+      {categories.map((cat, ci) => (
+        <div class={`reveal`} style={`transition-delay: ${ci * 0.1}s`}>
+          <!-- Category label -->
+          <div class="flex items-center gap-4 mb-6">
+            <span class="text-2xl">{cat.icon}</span>
+            <h3 class="font-display text-2xl font-semibold text-espresso">{cat.name}</h3>
+            <div class="flex-1 h-px bg-latte/30"></div>
+          </div>
+          <!-- Items grid -->
+          <div class="grid sm:grid-cols-2 gap-3">
+            {cat.items.map(item => (
+              <div class="flex items-start justify-between gap-4 p-4 rounded-xl bg-cream-dark/60 border border-latte/15 hover:border-latte/40 hover:bg-cream-dark transition-all duration-200 group">
+                <div class="flex-1">
+                  <p class="font-serif font-medium text-espresso group-hover:text-brown transition-colors">{item.name}</p>
+                  <p class="font-sans text-xs text-mocha/60 mt-0.5">{item.desc}</p>
+                </div>
+                <p class="font-display font-semibold text-latte shrink-0 text-sm pt-0.5">{item.price}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Note -->
+    <p class="mt-10 text-center font-sans text-xs text-mocha/50 reveal">
+      アレルギーをお持ちの方はスタッフまでお申し付けください。季節限定メニューあり。
+    </p>
+  </div>
+</section>

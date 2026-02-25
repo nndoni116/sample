@@ -1,0 +1,57 @@
+---
+---
+<section id="hero" class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20">
+  <!-- Decorative background circles -->
+  <div class="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-latte/10 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full bg-mocha/8 blur-3xl pointer-events-none"></div>
+
+  <div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
+    <!-- Eyebrow -->
+    <p class="font-sans text-xs tracking-[0.3em] uppercase text-latte mb-6 animate-[fadeUp_0.8s_ease_0.1s_both]">
+      Since 2018 — 東京・代々木上原
+    </p>
+    <!-- Main heading -->
+    <h1 class="font-display text-6xl sm:text-7xl md:text-8xl font-bold text-espresso leading-[0.95] mb-6 animate-[fadeUp_0.8s_ease_0.3s_both]">
+      Café<br/><span class="italic text-mocha">Ouka</span>
+    </h1>
+    <!-- Decorative line -->
+    <div class="flex items-center justify-center gap-4 mb-6 animate-[fadeUp_0.8s_ease_0.4s_both]">
+      <div class="h-px w-16 bg-latte/60"></div>
+      <span class="text-latte text-xl">✦</span>
+      <div class="h-px w-16 bg-latte/60"></div>
+    </div>
+    <!-- Tagline -->
+    <p class="font-serif text-lg sm:text-xl text-mocha/80 italic mb-10 animate-[fadeUp_0.8s_ease_0.5s_both]">
+      落ち着いた時間を、あなたに。
+    </p>
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-[fadeUp_0.8s_ease_0.6s_both]">
+      <a href="#menu"
+        class="px-8 py-3.5 bg-espresso text-cream font-sans font-medium text-sm tracking-widest uppercase rounded-full hover:bg-brown transition-colors duration-300">
+        メニューを見る
+      </a>
+      <a href="#access"
+        class="px-8 py-3.5 border border-mocha/40 text-mocha font-sans font-medium text-sm tracking-widest uppercase rounded-full hover:border-espresso hover:text-espresso transition-colors duration-300">
+        アクセス
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom scroll hint -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-[fadeUp_1s_ease_1s_both]">
+    <span class="text-xs text-latte/60 tracking-widest uppercase font-sans">Scroll</span>
+    <div class="w-px h-10 bg-gradient-to-b from-latte/60 to-transparent"></div>
+  </div>
+
+  <!-- Decorative large text -->
+  <p class="absolute bottom-8 right-6 text-[8rem] font-display font-bold text-espresso/[0.03] leading-none select-none pointer-events-none hidden md:block">
+    Coffee
+  </p>
+</section>
+
+<style>
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+</style>

@@ -1,0 +1,128 @@
+---
+---
+<section id="access" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <!-- Section header -->
+    <div class="text-center mb-14 reveal">
+      <p class="font-sans text-xs tracking-[0.3em] uppercase text-latte mb-3">Access</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-espresso">アクセス</h2>
+      <div class="mt-4 flex items-center justify-center gap-3">
+        <div class="h-px w-12 bg-latte/50"></div>
+        <span class="text-latte text-sm">✦</span>
+        <div class="h-px w-12 bg-latte/50"></div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <!-- Info card -->
+      <div class="reveal space-y-6">
+        <!-- Address -->
+        <div class="p-6 rounded-2xl bg-cream-dark/60 border border-latte/20">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-0.5">📍</span>
+            <div>
+              <p class="font-display text-lg font-semibold text-espresso mb-1">住所</p>
+              <p class="font-sans text-sm text-mocha leading-relaxed">
+                〒151-0064<br/>
+                東京都渋谷区上原1丁目26-5<br/>
+                サンプルビル 1F
+              </p>
+              <p class="font-sans text-xs text-mocha/50 mt-2">
+                ※ デモサイトのため架空の住所です
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Train -->
+        <div class="p-6 rounded-2xl bg-cream-dark/60 border border-latte/20">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-0.5">🚃</span>
+            <div>
+              <p class="font-display text-lg font-semibold text-espresso mb-2">アクセス</p>
+              <ul class="space-y-2 font-sans text-sm text-mocha">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-latte shrink-0"></span>
+                  小田急線・千代田線「代々木上原駅」北口 徒歩5分
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-latte shrink-0"></span>
+                  お近くにコインパーキングあり
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="p-6 rounded-2xl bg-cream-dark/60 border border-latte/20">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-0.5">📞</span>
+            <div>
+              <p class="font-display text-lg font-semibold text-espresso mb-1">お問い合わせ</p>
+              <p class="font-sans text-sm text-mocha">03-XXXX-XXXX</p>
+              <p class="font-sans text-xs text-mocha/50 mt-1">営業時間内にお気軽にどうぞ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="reveal" style="transition-delay: 0.15s">
+        <div class="rounded-2xl overflow-hidden border border-latte/20 shadow-lg aspect-square md:aspect-auto md:h-[460px] relative bg-cream-dark flex items-center justify-center">
+          <!-- Placeholder map (real usage would use Google Maps embed) -->
+          <div class="absolute inset-0 bg-[#EDE4D0]">
+            <svg width="100%" height="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid lines (streets) -->
+              <g stroke="#C4965A" stroke-width="0.4" opacity="0.3">
+                <line x1="0" y1="80" x2="400" y2="80"/>
+                <line x1="0" y1="140" x2="400" y2="140"/>
+                <line x1="0" y1="200" x2="400" y2="200"/>
+                <line x1="0" y1="260" x2="400" y2="260"/>
+                <line x1="0" y1="320" x2="400" y2="320"/>
+                <line x1="80" y1="0" x2="80" y2="400"/>
+                <line x1="140" y1="0" x2="140" y2="400"/>
+                <line x1="200" y1="0" x2="200" y2="400"/>
+                <line x1="260" y1="0" x2="260" y2="400"/>
+                <line x1="320" y1="0" x2="320" y2="400"/>
+              </g>
+              <!-- Main roads -->
+              <g stroke="#7B4F2E" stroke-width="2" opacity="0.3">
+                <line x1="0" y1="200" x2="400" y2="200"/>
+                <line x1="200" y1="0" x2="200" y2="400"/>
+                <!-- Diagonal road -->
+                <line x1="0" y1="100" x2="300" y2="400"/>
+              </g>
+              <!-- Blocks -->
+              <g fill="#C4965A" opacity="0.08">
+                <rect x="85" y="85" width="50" height="50" rx="2"/>
+                <rect x="145" y="85" width="50" height="50" rx="2"/>
+                <rect x="85" y="145" width="50" height="50" rx="2"/>
+                <rect x="205" y="145" width="50" height="110" rx="2"/>
+                <rect x="265" y="205" width="50" height="50" rx="2"/>
+                <rect x="265" y="85" width="110" height="110" rx="2"/>
+                <rect x="85" y="265" width="110" height="50" rx="2"/>
+                <rect x="265" y="265" width="110" height="50" rx="2"/>
+              </g>
+              <!-- Pin -->
+              <g transform="translate(200, 200)">
+                <circle cx="0" cy="0" r="28" fill="#D4A84B" opacity="0.2"/>
+                <circle cx="0" cy="0" r="18" fill="#D4A84B" opacity="0.3"/>
+                <circle cx="0" cy="0" r="10" fill="#D4A84B"/>
+                <circle cx="0" cy="0" r="4" fill="#1E0F07"/>
+              </g>
+            </svg>
+          </div>
+          <!-- Label -->
+          <div class="absolute bottom-4 left-4 right-4">
+            <div class="bg-espresso/90 backdrop-blur-sm text-cream text-xs font-sans px-4 py-2.5 rounded-xl flex items-center gap-2">
+              <span>📍</span>
+              <span class="font-medium">Café Ouka — 代々木上原</span>
+              <span class="ml-auto text-cream/40 text-[10px]">※デモ用地図</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
