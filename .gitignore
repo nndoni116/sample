@@ -1,0 +1,30 @@
+# 依存関係
+node_modules/
+
+# ビルド出力（デプロイ用の成果物）
+dist/
+chunks/
+
+# Astroの一時キャッシュ・型定義
+.astro/
+
+# 環境変数（APIキーなどの機密情報）
+.env
+.env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# エディタ設定
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS関連のシステムファイル
+.DS_Store
+Thumbs.db
