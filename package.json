@@ -1,16 +1,16 @@
 {
-  "name": "cafe-demo",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sample",
+  "compatibility_date": "2024-04-03",
+  "main": "dist/_worker.js",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "dist"
   },
-  "dependencies": {
-    "@astrojs/cloudflare": "^11.2.0",
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.4.0",
-    "tailwindcss": "^3.4.1"
+  "observability": {
+    "enabled": true
+  },
+  "devDependencies": {
+    "wrangler": "^4.68.1"
   }
 }
